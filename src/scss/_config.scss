@@ -1,0 +1,52 @@
+$white: #ebfbf3;
+$blue: #082341;
+$green: #5c9484;
+$light-green: #b8d0cc;
+$greish-blue:#344460;
+$dark-green: #305d69;
+$orange: #ff652f;
+$light-gray: #dddddd;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@function understate-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return $dark-green;
+    } @else {
+        @return white;
+    }
+}
+
+@mixin media-medium {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-large {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-extra-large {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

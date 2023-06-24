@@ -1,0 +1,20 @@
+@import "./config";
+
+.main-wraper {
+    background: $white;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 12vh;
+    align-items: center;
+    text-align: center;
+    
+      .home {
+        padding-top: 18vh;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+      }
+  }

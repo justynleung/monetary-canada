@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wraper {
+  background: #ebfbf3;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 12vh;
+  align-items: center;
+  text-align: center;
+}
+.main-wraper .home {
+  padding-top: 18vh;
+}
+.main-wraper h1 {
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=welcome.css.map */
