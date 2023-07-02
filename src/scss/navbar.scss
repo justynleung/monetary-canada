@@ -1,0 +1,139 @@
+@import "./config";
+
+// Style Navbar.js
+.nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    // opacity: 0.98;
+    box-shadow: 0 2px 3px rgba(15, 15, 15, 0.13);
+    background-color: $green;
+
+    .menu-nav {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding-right: 3rem;
+    
+        .menu-nav_item {
+            font-size: 1.3rem;
+            padding: 0 1rem;
+        }
+    }
+}
+
+// Style MobileNavLink.js
+
+.mobile-nav {
+    position: relative;
+    z-index: -1;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 4rem;
+    overflow: hidden;
+    list-style: none;
+
+    background-color: $green;
+    opacity: 0.98;
+
+
+    // Transition
+    animation-name: mobile-nav-transition;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+
+    &_item {
+        display: inline-block;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding: 0 0 2.5rem 3.5rem;
+        font-weight: 300;
+        
+        // Transition animation for .mobile-nav_item:nth-child()
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                animation-name: mobile-nav-transition;
+                animation-duration: (0.55 + ($i * 0.08s));
+                animation-timing-function: ease-in-out;
+            }
+        }
+    }
+}
+
+// Style MenuBtn.js
+.menu-btn {
+    position: absolute;
+
+    right: 1.8rem;
+    top: 1.7rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    &_burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: set-text-color($white);
+        @include transition-ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: set-text-color($white);
+            @include transition-ease;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: set-text-color($white);
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(720);
+            background: transparent;
+
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after {
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+// Style NavLogo.js
+.logo-wraper {
+
+    padding: 5px 0px 5px 50px;
+    .logo {
+        height: 100px;
+        width: auto;
+    }
+}
+

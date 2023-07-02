@@ -50,3 +50,14 @@ $light-gray: #dddddd;
         @content;
     }
 }
+
+
+@keyframes mobile-nav-transition {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

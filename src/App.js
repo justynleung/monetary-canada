@@ -1,33 +1,22 @@
 import './css/main.css';
-import Header from './Header';
-import Welcome from './Welcome';
-import Footer from './Footer';
+import Navbar from './components/navbar/Navbar';
+import Welcome from './components/welcome/Welcome';
+import Footer from './components/footer/Footer';
 export default function App() {
   return (
-    <html lang="en">
-      <head>
-          <meta charset="UTF-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <link rel="stylesheet" href="./css/main.css"/>
-          <title>(Beta) MonetaryCanada</title>
-      </head>
-      <body>
-        <Header />
-        <div class="flex-container">
+      <div className='body'>
+        <Navbar />
+        <div className="flex-container">
           <main>
             <section>
-              <div class="main-wrapper">
+              <div className="main-wrapper">
                 <Welcome />
               </div>
               <Footer />
-              <scrip src="https://kit.fontawesome.com/075992ffe3.js" crossorigin="anonymous" />
-              <script src="js/main.js"/>
             </section>
           </main>
         </div>
-      </body>
-    </html> 
+      </div>
   );
 }
 
