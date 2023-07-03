@@ -2,9 +2,8 @@ import { useState } from 'react';
 import { useMediaQuery } from "react-responsive";
 
 import NavLink from "./NavLink";
-import MenuBtn from './MenuBtn';
 import NavLogo from './NavLogo';
-import MobileNavLink from './MobileNavLink';
+import MobileNav from './DelayedMobileNav';
 
 import '../../css/navbar.css';
 import { DeviceSize } from '../responsive/index';
@@ -18,10 +17,9 @@ export default function Navbar() {
         <header>
             <div className="nav">
                 {!isMobile && <NavLogo />}
-                {isMobile && <MenuBtn isOpen = {isOpen} toggle = {() => setIsOpen(!isOpen)} />}
                 {!isMobile && <NavLink />}
             </div>
-            {isMobile && isOpen && <MobileNavLink isOpen = {isOpen}/>}
+            {isMobile && <MobileNav isOpen = {isOpen} toggle = {() => setIsOpen(!isOpen)}/>}
         </header>
     );
 }

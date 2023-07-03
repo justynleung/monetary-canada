@@ -14,7 +14,7 @@ $light-gray: #dddddd;
 }
 
 @mixin transition-ease {
-    transition: all 0.5s ease-in-out;
+    transition: all 450ms ease-in-out;
 }
 
 @function set-text-color($color) {
@@ -52,12 +52,4 @@ $light-gray: #dddddd;
 }
 
 
-@keyframes mobile-nav-transition {
-    from {
-        transform: translateX(100vw);
-    }
 
-    to {
-        transform: translateX(0);
-    }
-}

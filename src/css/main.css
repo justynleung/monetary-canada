@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-@keyframes mobile-nav-transition {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 body {
   background: #ebfbf3;
   color: #000;
