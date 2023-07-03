@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function DelayedMobileNavLink(time = 450) {
+function DelayedMobileNav(time = 450) {
     const [state, setState] = useState("unmounted");
     const show = () => {
         if (state === "unmounting") {
