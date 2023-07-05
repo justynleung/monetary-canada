@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: auto;
     opacity: 0.98;
     box-shadow: 0 2px 3px rgba(15, 15, 15, 0.13);
     background-color: $green;
@@ -25,6 +26,20 @@
         .menu-nav_item {
             font-size: 1.3rem;
             padding: 0 1rem;
+        }
+
+        &_link {
+            @include transition-ease;
+
+            &.active {
+                text-decoration: underline;
+            }
+
+            &:hover {
+                color: $light-gray;
+                @include transition-ease;
+
+            }
         }
     }
 }
@@ -181,7 +196,7 @@
 
     padding: 5px 0px 5px 50px;
     .logo {
-        height: 100px;
+        height: 70px;
         width: auto;
     }
 }

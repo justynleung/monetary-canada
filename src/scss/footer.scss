@@ -24,9 +24,11 @@
         flex-direction: row;
         justify-content: flex-end;
 
-        margin-right: 30px;
+        margin-right: 95px;
+
         .social-icons {
           margin: 0 10px;
+          font-size: 23px;
         }
       }
     }
@@ -62,6 +64,10 @@
         padding-bottom: 1rem;
       }
     }
+  }
+
+  .footer_link {
+    padding-top: 5px;
   }
 
   a {

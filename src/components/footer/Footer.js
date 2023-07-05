@@ -1,31 +1,18 @@
+// Assets
+import logo from '../images/logo-no-background.png';
+
+// Style 
 import '../../css/footer.css';
 
+// Fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 export default function Footer() {
+
   return (
     <footer>
         <div className="footer-wraper_main">
-                    <div className="footer-wraper_row">
-                        <div className="icon-wraper">
-                            <span className="icon"></span>
-                        </div>
-                        <div className="social-icons-wraper">
-                            <div className="social-icons">
-                                <a href="#!">
-                                    <i className="fab fa-twitter fa-2x"></i>
-                                </a>
-                            </div>
-                            <div className="social-icons">
-                                <a href="#!">
-                                    <i className="fab fa-instagram fa-2x"></i>
-                                </a>
-                            </div>
-                            <div className="social-icons">
-                                <a href="#!">
-                                    <i className="fab fa-youtube fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div className="footer-wraper_col">
                         <div className="footer-wraper_row">
                             <h3 className="footer_header">About</h3>
@@ -48,6 +35,28 @@ export default function Footer() {
                         <div className="footer-wraper_row">
                              <h3 className="footer_header">Stay updated</h3>
                             <div className="signup"></div>
+                        </div>
+                    </div>
+                    <div className="footer-wraper_row">
+                        {/* <div className="logo-wraper">
+                            <img src={logo} alt="Monetary Canada Logo" className="logo"/>
+                        </div> */}
+                        <div className="social-icons-wraper">
+                            <div className="social-icons">
+                                <a href="#!">
+                                    <FontAwesomeIcon icon={faTwitter} />
+                                </a>
+                            </div>
+                            <div className="social-icons">
+                                <a href="#!">
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </a>
+                            </div>
+                            <div className="social-icons">
+                                <a href="#!">
+                                    <FontAwesomeIcon icon={faYoutube} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className="footer-wraper_copyright">

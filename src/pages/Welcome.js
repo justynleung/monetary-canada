@@ -1,4 +1,4 @@
-import '../../css/welcome.css';
+import '../css/welcome.css';
 
 export default function Welcome() {
   return (

@@ -14,8 +14,12 @@ $light-gray: #dddddd;
 }
 
 @mixin transition-ease {
-    transition: all 450ms ease-in-out;
+    -webkit-transition: all 450ms ease-in-out;
+    -moz-transition: all 450ms ease-in-out;
+    -ms-transition: all 450ms ease-in-out;
+    -o-transition: all 450ms ease-in-out
 }
+
 
 @function set-text-color($color) {
     @if(lightness($color) > 40%) {

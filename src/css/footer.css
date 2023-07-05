@@ -22,10 +22,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 30px;
+  margin-right: 95px;
 }
 .footer-wraper_row .social-icons-wraper .social-icons {
   margin: 0 10px;
+  font-size: 23px;
 }
 .footer-wraper_col {
   display: flex;
@@ -52,6 +53,10 @@
   font-size: smaller;
   text-align: justify;
   padding-bottom: 1rem;
+}
+
+.footer_link {
+  padding-top: 5px;
 }
 
 a {

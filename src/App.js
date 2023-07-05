@@ -1,23 +1,35 @@
+import {
+  createBrowserRouter, 
+  createRoutesFromElements,
+  Route, 
+  RouterProvider
+} from 'react-router-dom'
+
+// Style
 import './css/main.css';
-import Navbar from './components/navbar/Navbar';
-import Welcome from './components/welcome/Welcome';
-import Footer from './components/footer/Footer';
-export default function App() {
+
+// Components
+import Welcome from './pages/Welcome';
+
+// Layouts
+import RootLayout from './layouts/RootLayout'
+import BankingAccounts from './pages/Banking-accounts';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Welcome />} />
+      <Route path="banking-accounts" element={<BankingAccounts/>}/>
+    </Route>
+  )
+)
+
+function App() {
   return (
-      <div className='body'>
-        <Navbar />
-        <div className="flex-container">
-          <main>
-            <section>
-              <div className="main-wrapper">
-                <Welcome />
-              </div>
-              <Footer />
-            </section>
-          </main>
-        </div>
-      </div>
+    <RouterProvider router={router} />
   );
 }
+
+export default App;
 
 
