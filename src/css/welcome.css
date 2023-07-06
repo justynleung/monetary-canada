@@ -7,13 +7,14 @@
 .main-wraper {
   background: #ebfbf3;
   position: relative;
+  width: 100vw;
   min-height: 100vh;
-  padding-top: auto;
+  margin-top: 83px;
   align-items: center;
   text-align: center;
 }
 .main-wraper .home {
-  padding-top: 18vh;
+  padding-top: auto;
 }
 .main-wraper h1 {
   font-size: 2.8rem;

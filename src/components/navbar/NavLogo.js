@@ -1,6 +1,6 @@
 import '../../css/navbar.css';
 
-import logo from '../images/logo-no-background.png';
+import logo from '../../asset/images/light-logo-no-bg.png';
 
 export default function NavLogo() {
     

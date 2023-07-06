@@ -3,15 +3,15 @@
 .main-wraper {
     background: $white;
     position: relative;
+    width: 100vw;
     min-height: 100vh;
-    padding-top: auto;
+    margin-top: 83px;
     align-items: center;
     text-align: center;
-    
-      .home {
-        padding-top: 18vh;
-      }
 
+      .home {
+        padding-top: auto;
+      }
       h1 {
         font-size: 2.8rem;
         padding-bottom: 1rem;

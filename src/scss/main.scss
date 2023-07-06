@@ -21,6 +21,7 @@ a {
   text-decoration: none;
 }
 
+
 header {
   position: fixed;
   z-index: 1;
@@ -30,27 +31,6 @@ header {
 main {
   height: 100%;
   width: 100%;
-
-  // .social-icons-wrap {
-  //   position: fixed;
-  //   bottom: 0.9rem;
-  //   left: 1rem;
-
-  //   .social-icons {
-  //     display: inline-flex;
-  //     flex-direction: column;
-  //     align-items: flex-start;
-
-  //     a {
-  //       padding: 0.4rem;
-  //       @include transition-ease;
-
-  //       &:hover {
-  //         color: $orange;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 .flex-container {

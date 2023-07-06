@@ -1,6 +1,3 @@
-// Assets
-import logo from '../images/logo-no-background.png';
-
 // Style 
 import '../../css/footer.css';
 

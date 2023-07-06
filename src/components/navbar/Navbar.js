@@ -1,5 +1,4 @@
 // React
-import { useState } from 'react';
 import { useMediaQuery } from "react-responsive";
 
 // Components
@@ -15,7 +14,6 @@ import { DeviceSize } from '../responsive/DeviceSize';
 
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
     const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile})
 
     return (
