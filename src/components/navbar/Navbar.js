@@ -10,15 +10,15 @@ import MobileNav from './MobileNav';
 import '../../css/navbar.css';
 
 // Asset
-import { DeviceSize } from '../responsive/DeviceSize';
+import { DeviceSize } from '../../asset/data/DeviceSize';
 
 
 export default function Navbar() {
-    const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile})
+    const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile })
 
     return (
         <header>
-            <div className="nav">
+            <div className={`nav ${isMobile ? "mobile" : ""}`}>
                 {!isMobile && <NavLogo />}
                 {!isMobile && <NavLinks />}
             </div>

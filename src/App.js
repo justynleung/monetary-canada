@@ -1,25 +1,22 @@
 import {
-  createBrowserRouter, 
+  createBrowserRouter,
   createRoutesFromElements,
-  Route, 
+  Route,
   RouterProvider
 } from 'react-router-dom'
 
-// Style
-import './css/main.css';
-
-// Components
-import Welcome from './pages/Welcome';
-
-// Layouts
-import RootLayout from './layouts/RootLayout'
-import BankingAccounts from './pages/Banking-accounts';
+// Outlet
+import RootLayout from './root-layout/RootLayout'
+import BankingAccounts from './outlet/Banking-accounts/index';
+import Welcome from './outlet/Welcome';
+import Blog from './outlet/Blog/index'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Welcome />} />
-      <Route path="banking-accounts" element={<BankingAccounts/>}/>
+      <Route path="banking-accounts" element={<BankingAccounts />} />
+      <Route path="blog" element={<Blog />} />
     </Route>
   )
 )

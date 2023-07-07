@@ -1,11 +1,14 @@
-$white: #ebfbf3;
+$white: #fff;
+$black: #231f20;
 $blue: #082341;
 $green: #5c9484;
 $light-green: #b8d0cc;
-$greish-blue:#344460;
+$greish-blue: #344460;
 $dark-green: #305d69;
 $orange: #ff652f;
 $light-gray: #dddddd;
+$off-white: #f1f1f1;
+
 
 * {
     box-sizing: border-box;
@@ -23,8 +26,10 @@ $light-gray: #dddddd;
 
 @function set-text-color($color) {
     @if(lightness($color) > 40%) {
-        @return #000;
-    } @else {
+        @return $black;
+    }
+
+    @else {
         @return #fff;
     }
 }
@@ -32,7 +37,9 @@ $light-gray: #dddddd;
 @function understate-text-color($color) {
     @if(lightness($color) > 40%) {
         @return $dark-green;
-    } @else {
+    }
+
+    @else {
         @return white;
     }
 }
@@ -54,6 +61,3 @@ $light-gray: #dddddd;
         @content;
     }
 }
-
-
-

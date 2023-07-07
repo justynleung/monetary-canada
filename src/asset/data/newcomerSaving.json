@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "Name": "RBC High Interest eSavings Account",
+        "Monthly Fee": "Free",
+        "Base interest rates": "1.5%",
+        "Promotional interest rates": "Up to 5% for 3 months",
+        "CDIC": "Yes"
+    },
+    {
+        "id": 2,
+        "Name": "BMO Savings Amplifier Account",
+        "Monthly Fee": "Free",
+        "Base interest rates": "1.8%",
+        "Promotional interest rates": "Up to 5% for 5 months",
+        "CDIC": "Yes"
+    },
+    {
+        "id": 3,
+        "Name": "CIBC eAdvantage® Savings Account",
+        "Monthly Fee": "Free",
+        "Base interest rates": "0.40% to 1.60%",
+        "Promotional interest rates": "Up to 5.2% for 4 months",
+        "CDIC": "Yes"
+    },
+    {
+        "id": 4,
+        "Name": "Scotia MomentumPLUS Savings Account",
+        "Monthly Fee": "Free",
+        "Base interest rates": "1.4%",
+        "Promotional interest rates": "Up to 4.95% for 5 months",
+        "CDIC": "Yes"
+    },
+    {
+        "id": 5,
+        "Name": "TD ePremium Savings Account",
+        "Monthly Fee": "Free",
+        "Base interest rates": "1.6% (For >=10k balance)",
+        "Promotional interest rates": "Up to 1.85% for 6 months",
+        "CDIC": "Yes"
+    },
+    {
+        "id": 6,
+        "Name": "HSBC Canadian Dollar Savings Accounts",
+        "Monthly Fee": "Free",
+        "Base interest rates": "1.15% to 1.65%",
+        "Promotional interest rates": "nil",
+        "CDIC": "Yes"
+    }
+]

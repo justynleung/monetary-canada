@@ -1,15 +1,13 @@
 // React
 import { NavLink } from 'react-router-dom';
 
-// Pages
-import BankingAccounts from '../../pages/Banking-accounts';
-
+// Style
 import '../../css/navbar.css';
 
 
 export default function NavLinks() {
 
-  return (
+    return (
         <ul className="menu-nav">
             <li className="menu-nav_item">
                 <NavLink to="/" className="menu-nav_link">
@@ -21,23 +19,23 @@ export default function NavLinks() {
                     Banking Accounts
                 </NavLink>
             </li>
-            {/* <li className="menu-nav_item">
-                <NavLink to="credit-cards" className="menu-nav_link">
-                    Credit Cards
+            <li className="menu-nav_item">
+                <NavLink to="NA" className="menu-nav_link">
+                    NA
                 </NavLink>
             </li>
             <li className="menu-nav_item">
-                <NavLink to="insurance" className="menu-nav_link">
-                    Insurance
+                <NavLink to="NA" className="menu-nav_link">
+                    NA
                 </NavLink>
             </li>
             <li className="menu-nav_item">
                 <NavLink to="blog" className="menu-nav_link">
                     Blog
                 </NavLink>
-            </li> */}
+            </li>
         </ul>
-  );
+    );
 }
 
 

@@ -1,76 +1,73 @@
 @import "./config";
- 
-.footer-wraper {
-    &_main {
+@import "./main";
+
+.footer-wrapper {
+  &_main {
+    display: flex;
+    flex-direction: column;
+
+    background-color: $green;
+    width: 100vw;
+    height: auto;
+  }
+
+  &.flex_col {
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.8;
+
+    .social-icons-wrapper {
       display: flex;
-      flex-direction: column;
-  
-      background-color: $green;
-      width: 100vw;
-      height: auto;
-    }
-  
-    &_row {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+      flex-direction: row;
+      justify-content: flex-end;
 
-      margin-top: 30px;
+      margin-right: 95px;
 
-      line-height: 1.8;
-  
-      .social-icons-wraper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-        margin-right: 95px;
-
-        .social-icons {
-          margin: 0 10px;
-          font-size: 23px;
-        }
-      }
-    }
-  
-    &_col {
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    &_copyright {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-
-      position: relative;
-      width: 90%;
-      height: auto;
-      margin: 1rem auto;
-
-      &_text {
-        ::before {
-          background-color: black;
-          content: "";
-          display: block;
-          width: auto;
-          height: 2px;
-          margin-bottom: 1rem;
-        }
-      }
-      p {
-        font-size: smaller;
-        text-align: justify;
-        padding-bottom: 1rem;
+      .social-icons {
+        margin: 0 10px;
+        font-size: 23px;
       }
     }
   }
 
-  .footer_link {
-    padding-top: 5px;
+  &.flex_row {
+    justify-content: space-around;
   }
 
-  a {
-    color: set-text-color($white);
-    text-decoration: none;
+  &_copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+
+    &_text {
+      ::before {
+        background-color: black;
+        content: "";
+        display: block;
+        width: auto;
+        height: 2px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      font-size: smaller;
+      text-align: justify;
+      padding-bottom: 1rem;
+    }
   }
+}
+
+.footer_link {
+  padding-top: 5px;
+}
+
+a {
+  color: set-text-color($white);
+  text-decoration: none;
+}
