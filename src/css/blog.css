@@ -64,10 +64,21 @@ footer {
   flex-direction: column;
 }
 
+.main-wrapper {
+  margin-top: 0rem;
+}
+
 .wrapper-width-60 {
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: auto;
   width: 60%;
   background-color: #5c9484;
+}
+
+.banner {
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 30px;
+  background-color: #082341;
 }/*# sourceMappingURL=blog.css.map */

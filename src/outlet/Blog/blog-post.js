@@ -1,4 +1,9 @@
-import data from '../../asset/data/blog-post'
+// Asset
+import data from '../../asset/data/blog-post.js';
+import placeholderImg from '../../asset/images/placeholder-image.webp';
+
+// Library
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function BlogPostFeed() {
     const post = data.map(item => {
@@ -23,9 +28,14 @@ function BlogPost(props) {
         <>
             <h3>{title}</h3>
             <small>{timestamp}</small>
-            <img src={img} alt="photo" />
+            <LazyLoadImage height={480} width={720}
+                src={img}
+                alt="photo"
+                placeholderSrc={placeholderImg}
+            />
             <p>{content}</p>
         </>
     )
 }
+
 export default BlogPostFeed;
