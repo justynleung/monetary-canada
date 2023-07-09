@@ -1,6 +1,6 @@
-import data from '../../asset/data/blog-post.json'
+import data from '../../asset/data/blog-post'
 
-const BlogPostFeed = () => {
+function BlogPostFeed() {
     const post = data.map(item => {
         return <BlogPost
             key={item.id}
@@ -23,7 +23,7 @@ function BlogPost(props) {
         <>
             <h3>{title}</h3>
             <small>{timestamp}</small>
-            <img src={require("../../asset/images/Blog-post/micheile-henderson-ZVprbBmT8QA-unsplash.jpeg")} alt="photo" />
+            <img src={img} alt="photo" />
             <p>{content}</p>
         </>
     )
