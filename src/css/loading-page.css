@@ -85,29 +85,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
 }
-
-.loading-animation {
-  position: absolute;
+.loading-page-wrapper .loading-animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading-page-wrapper .loading-text {
+  padding-top: 0.8em;
   color: #ff652f;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 0ms infinite ease-in;
-}
-
-.animated-logo {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: stroke 5s ease-in-out;
-}
-
-@keyframes stroke {
-  from {
-    stroke-dashoffset: 100;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
 }/*# sourceMappingURL=loading-page.css.map */

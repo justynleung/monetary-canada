@@ -8,24 +8,20 @@
     justify-content: center;
     align-items: center;
 
+    text-align: center;
+
     height: 100vh;
-}
 
-.loading-animation {
-    position: absolute;
 
-    color: $orange;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
+    .loading-animation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    animation: animated-logo 500ms 0ms infinite ease-in;
-}
-
-.animated-logo {
-
-    stroke-dasharray: 100;
-    stroke-dashoffset: 0;
-
-    animation: stroke 5s ease-in-out;
+    .loading-text {
+        padding-top: 0.8em;
+        color: $orange;
+    }
 }
