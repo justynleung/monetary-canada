@@ -85,105 +85,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5.1em;
   height: 100vh;
 }
 
-.loading-animation-1 {
+.loading-animation {
   position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
+  color: #ff652f;
+  height: 500px;
+  width: 500px;
   border-radius: 50%;
   animation: animated-logo 500ms 0ms infinite ease-in;
 }
 
-.loading-animation-2 {
-  position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 50ms infinite ease-in;
+.animated-logo {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: stroke 5s ease-in-out;
 }
 
-.loading-animation-3 {
-  position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 100ms infinite ease-in;
-}
-
-.loading-animation-4 {
-  position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 150ms infinite ease-in;
-}
-
-.loading-animation-5 {
-  position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 200ms infinite ease-in;
-}
-
-.loading-animation-6 {
-  position: absolute;
-  top: 33%;
-  right: 50%;
-  background-color: #ff652f;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  animation: animated-logo 500ms 250ms infinite ease-in;
-}
-
-@keyframes animated-logo {
-  0% {
-    transform: translateX(0) translateY(0);
+@keyframes stroke {
+  from {
+    stroke-dashoffset: 100;
   }
-  8% {
-    transform: translateX(25px) translateY(-25px);
-  }
-  16% {
-    transform: translateX(35px) translateY(-50px);
-  }
-  24% {
-    transform: translateX(45px) translateY(-90px);
-  }
-  32% {
-    transform: translateX(50px) translateY(-65px);
-  }
-  40% {
-    transform: translateX(60px) translateY(-48px);
-  }
-  55% {
-    transform: translateX(65px) translateY(-60px);
-  }
-  70% {
-    transform: translateX(85px) translateY(-100px);
-  }
-  85% {
-    transform: translateX(95px) translateY(-65px);
-  }
-  100% {
-    transform: translateX(110px) translateY(-60px);
+  to {
+    stroke-dashoffset: 0;
   }
 }/*# sourceMappingURL=loading-page.css.map */
