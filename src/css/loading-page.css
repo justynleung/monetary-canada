@@ -1,0 +1,189 @@
+:root {
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #231f20;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #231f20;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  /* fallback height */
+  min-height: 100%;
+}
+
+footer {
+  font-size: 16rem;
+  margin-top: 80rem;
+  color: #231f20;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-page-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.1em;
+  height: 100vh;
+}
+
+.loading-animation-1 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 0ms infinite ease-in;
+}
+
+.loading-animation-2 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 50ms infinite ease-in;
+}
+
+.loading-animation-3 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 100ms infinite ease-in;
+}
+
+.loading-animation-4 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 150ms infinite ease-in;
+}
+
+.loading-animation-5 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 200ms infinite ease-in;
+}
+
+.loading-animation-6 {
+  position: absolute;
+  top: 33%;
+  right: 50%;
+  background-color: #ff652f;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: animated-logo 500ms 250ms infinite ease-in;
+}
+
+@keyframes animated-logo {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  8% {
+    transform: translateX(25px) translateY(-25px);
+  }
+  16% {
+    transform: translateX(35px) translateY(-50px);
+  }
+  24% {
+    transform: translateX(45px) translateY(-90px);
+  }
+  32% {
+    transform: translateX(50px) translateY(-65px);
+  }
+  40% {
+    transform: translateX(60px) translateY(-48px);
+  }
+  55% {
+    transform: translateX(65px) translateY(-60px);
+  }
+  70% {
+    transform: translateX(85px) translateY(-100px);
+  }
+  85% {
+    transform: translateX(95px) translateY(-65px);
+  }
+  100% {
+    transform: translateX(110px) translateY(-60px);
+  }
+}/*# sourceMappingURL=loading-page.css.map */

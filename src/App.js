@@ -10,6 +10,7 @@ import RootLayout from './root-layout/RootLayout'
 import BankingAccounts from './outlet/Banking-accounts/index';
 import Welcome from './outlet/Welcome';
 import Blog from './outlet/Blog/index'
+import LoadingPage from './root-layout/LoadingPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<Welcome />} />
       <Route path="banking-accounts" element={<BankingAccounts />} />
       <Route path="blog" element={<Blog />} />
+      <Route path="loading" element={<LoadingPage />} />
     </Route>
   )
 )

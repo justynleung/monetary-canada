@@ -25,7 +25,7 @@ export default function NavLinks() {
                 </NavLink>
             </li>
             <li className="menu-nav_item">
-                <NavLink to="NA" className="menu-nav_link">
+                <NavLink to="loading" className="menu-nav_link">
                     NA
                 </NavLink>
             </li>
