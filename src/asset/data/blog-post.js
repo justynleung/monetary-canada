@@ -18,14 +18,14 @@ const blogPostData = [
         title: "How to fulfill cash bonus requirements?",
         img: require("../../asset/images/Blog-post/tech-daily-pz_L0YpSVvE-unsplash.jpeg"),
         content: "",
-        timestamp: ""
+        timestamp: "7/7/2023"
     },
     {
         id: 4,
         title: "TFSA & RRSP",
         img: require("../../asset/images/Blog-post/micheile-henderson-ZVprbBmT8QA-unsplash.jpeg"),
         content: "",
-        timestamp: ""
+        timestamp: "7/7/2023"
     }
 ]
 

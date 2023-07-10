@@ -13,7 +13,7 @@
 
   &.flex_col {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 2em;
     line-height: 1.8;
 
     .social-icons-wrapper {
@@ -21,11 +21,11 @@
       flex-direction: row;
       justify-content: flex-end;
 
-      margin-right: 95px;
+      margin-right: 5.94em;
 
       .social-icons {
-        margin: 0 10px;
-        font-size: 23px;
+        font-size: 23rem;
+        margin: 0 0.44em;
       }
     }
   }
@@ -42,7 +42,7 @@
     position: relative;
     width: 90%;
     height: auto;
-    margin: 1rem auto;
+    margin: 1em auto;
 
     &_text {
       ::before {
@@ -50,21 +50,23 @@
         content: "";
         display: block;
         width: auto;
-        height: 2px;
-        margin-bottom: 1rem;
+        height: 0.125em;
+        margin-bottom: 1em;
       }
     }
 
     p {
       font-size: smaller;
       text-align: justify;
-      padding-bottom: 1rem;
+      padding-bottom: 1em;
+
+      line-height: 1.2;
     }
   }
 }
 
 .footer_link {
-  padding-top: 5px;
+  padding-top: 0.32em;
 }
 
 a {

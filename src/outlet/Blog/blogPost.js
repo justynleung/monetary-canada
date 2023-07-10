@@ -25,16 +25,16 @@ function BlogPostFeed() {
 function BlogPost(props) {
     const { title, img, content, timestamp } = props;
     return (
-        <>
-            <h3>{title}</h3>
-            <small>{timestamp}</small>
-            <LazyLoadImage height={480} width={720}
+        <div className="blog-post flex_col">
+            <LazyLoadImage
                 src={img}
                 alt="photo"
                 placeholderSrc={placeholderImg}
             />
-            <p>{content}</p>
-        </>
+            <h3>{title}</h3>
+            <small>{timestamp}</small>
+            <p className="expandable">{content}</p>
+        </div>
     )
 }
 

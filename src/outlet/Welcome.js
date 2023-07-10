@@ -2,7 +2,7 @@ import '../css/welcome.css';
 
 export default function Welcome() {
   return (
-    <div className="home">
+    <div className="home-wrapper">
       <h1 style={{ color: "red" }}>Currently in beta, stay tuned</h1>
       <h1>No more struggles.
         Plus de luttes.</h1>
