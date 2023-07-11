@@ -16,8 +16,6 @@
     box-shadow: 0 2px 3px rgba(15, 15, 15, 0.13);
     background-color: $white;
 
-    z-index: 1;
-
     .mobile {
         margin-bottom: 0em;
     }
@@ -29,11 +27,11 @@
         justify-content: flex-end;
         align-items: center;
         list-style: none;
-        padding-right: 3rem;
+        padding-right: 1.5em;
 
         .menu-nav_item {
             font-size: 20.8rem;
-            padding: 0 16rem;
+            padding: 0 0.8em;
         }
 
         &_link {
@@ -131,6 +129,8 @@
 // Style MenuBtn.js
 .menu-btn {
     position: absolute;
+
+    z-index: 3;
 
     right: 1.8em;
     top: 1.8em;

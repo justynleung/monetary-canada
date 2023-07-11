@@ -66,7 +66,7 @@ main {
 
 footer {
   font-size: 16rem;
-  margin-top: 80rem;
+  margin-top: 5em;
   color: #231f20;
 }
 
@@ -91,7 +91,6 @@ footer {
   opacity: 0.98;
   box-shadow: 0 2px 3px rgba(15, 15, 15, 0.13);
   background-color: #fff;
-  z-index: 1;
 }
 .nav .mobile {
   margin-bottom: 0em;
@@ -103,11 +102,11 @@ footer {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  padding-right: 3rem;
+  padding-right: 1.5em;
 }
 .nav .menu-nav .menu-nav_item {
   font-size: 20.8rem;
-  padding: 0 16rem;
+  padding: 0 0.8em;
 }
 .nav .menu-nav_link {
   -webkit-transition: all 450ms ease-in-out;
@@ -207,6 +206,7 @@ footer {
 
 .menu-btn {
   position: absolute;
+  z-index: 3;
   right: 1.8em;
   top: 1.8em;
   height: 1.25em;
