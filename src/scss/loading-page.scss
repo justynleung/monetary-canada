@@ -1,8 +1,9 @@
 @import "./config";
 @import "./main";
 
+
 .loading-page-wrapper {
-    position: relative;
+    position: fixed;
 
     display: flex;
     justify-content: center;
@@ -11,7 +12,21 @@
     text-align: center;
 
     height: 100vh;
+    width: 100vw;
+    background-color: white;
+    opacity: 1;
 
+    z-index: 3;
+
+    &.hiding {
+        opacity: 0;
+        transition: 300ms 1200ms ease-in;
+    }
+
+    &.hide {
+        display: none;
+
+    }
 
     .loading-animation {
         display: flex;

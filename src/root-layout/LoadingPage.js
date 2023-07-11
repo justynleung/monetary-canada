@@ -4,14 +4,14 @@ import '../css/loading-page.css';
 
 import { motion } from "framer-motion"
 
-export default function LoadingPage() {
+export default function LoadingPage(props) {
     const pathVariants = {
         hidden: {
             pathLength: 0
         },
         visible: {
             pathLength: 1,
-            transition: { duration: 1.5, repeat: Infinity, repeatDelay: 0.5 }
+            transition: { duration: 1.2, repeat: Infinity, repeatDelay: 0.5 }
         }
     }
 
@@ -25,7 +25,7 @@ export default function LoadingPage() {
         }
     }
     return (
-        <div className='loading-page-wrapper' >
+        <div className={`loading-page-wrapper ${props.className}`}>
             <div className='loading-animation'>
                 <svg className="animated-logo" xmlns="http://www.w3.org/2000/svg" width={104} height={104}>
                     <motion.path

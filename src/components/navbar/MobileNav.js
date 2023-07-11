@@ -1,11 +1,11 @@
 // React
 import { NavLink, onClick } from 'react-router-dom';
 
-// Responsive
-import { DelayedMounting } from "../../hook/DelayedMounting"
+// Hook
+import { DelayedMountUnmount } from "../../hook/DelayedMountUnmount"
 
 export default function MobileNav() {
-    const [state, show, hide, hideNow] = DelayedMounting();
+    const [state, show, hide, hideNow] = DelayedMountUnmount(450);
 
     return (
         <>

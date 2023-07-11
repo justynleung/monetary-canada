@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function DelayedMounting(time = 450) {
+export function DelayedMountUnmount(time) {
     const [state, setState] = useState("unmounted");
     const show = () => {
         if (state === "unmounting") {
@@ -29,11 +29,11 @@ export function DelayedMounting(time = 450) {
                 setState("mounted");
             }, time);
         }
-    
+
         return () => {
             clearTimeout(timeoutId);
         };
     }, [state, time]);
 
-    return [state, show, hide, hideNow];
+    return [state, show, hide, hideNow, setState];
 }
