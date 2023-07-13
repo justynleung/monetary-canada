@@ -1,36 +1,44 @@
 // Asset 
-import Data from "../../../asset/data/newcomerSaving.json"
+import data from "../../../asset/data/newcomerSaving.json"
 
 // React table
 import ReactTable from 'react-table-v6';
 import '../../../css/banking-accounts.css'
 
-function table() {
-    const data = Data;
-    const columns = [{
-        Header: '',
-        accessor: 'Name'
-    }, {
-        Header: 'Monthly Fee',
-        accessor: 'Monthly Fee',
-    }, {
-        Header: 'Base interest rates',
-        accessor: 'Base interest rates'
-    }, {
-        Header: 'Promotional interest rates',
-        accessor: 'Promotional interest rates'
-    }, {
-        Header: 'CDIC',
-        accessor: 'CDIC'
-    }]
 
-    return <ReactTable
-        data={data}
-        columns={columns}
-        minRows={0}
-        showPagination={false}
-        className="-highlight"
-    />
+function App() {
+    const rowHeader = Object.keys(data[0]).splice(1, 6)
+    const row = rowHeader.map((item, index) => {
+        return (
+            <tr>
+                <td>{item}</td>
+                <Cell item={item} />
+            </tr>
+
+        )
+    })
+
+    return (
+        <tbody>
+            {row}
+        </tbody>
+    );
+}
+function Cell(props) {
+    const col = data.map((item, index) => {
+
+        return (
+            <>
+                <td>{data[index][props.item.toString()]}</td>
+            </>
+        )
+    })
+    return (
+        <>
+            {col}
+        </>
+
+    )
 }
 
-export default table;
+export default App;

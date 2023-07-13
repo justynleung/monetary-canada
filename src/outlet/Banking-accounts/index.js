@@ -1,6 +1,5 @@
-import Chequing from './newcomerOffer/TableNewcomerChequing';
 import Saving from './newcomerOffer/TableNewcomerSaving';
-
+import Chequing from './newcomerOffer/TableNewcomerChequing'
 export default function BankingAccounts() {
     return (
         <div className="banking-accounts-wrapper">
@@ -16,8 +15,9 @@ export default function BankingAccounts() {
             </div>
             <Saving />
             <div className="text-box-left">
-                <small class="tc-text">*Base interest rate and promotional interest rate are subjected to change by the instituitions. Cash bonus detail can be found on respective official websites. Please refer to official website for most accurate information. Information is up to date as of 5/6/2023.</small>
+                <small className="tc-text">*Base interest rate and promotional interest rate are subjected to change by the instituitions. Cash bonus detail can be found on respective official websites. Please refer to official website for most accurate information. Information is up to date as of 5/6/2023.</small>
             </div>
+
         </div>
     )
 }

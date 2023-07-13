@@ -1,10 +1,5 @@
-// Asset 
-import data from "../../../asset/data/newcomerChequing.json";
-
-
-function App() {
-    const rowHeader = Object.keys(data[0]).splice(1, 6)
-    const row = rowHeader.map((item, index) => {
+export function Table([]) {
+    const row = rowHeader.map((item) => {
         return (
             <tr>
                 <td>{item}</td>
@@ -21,8 +16,7 @@ function App() {
     );
 }
 function Cell(props) {
-    const col = data.map((item, index) => {
-
+    const loop = data.map((item, index) => {
         return (
             <>
                 <td>{data[index][props.item.toString()]}</td>
@@ -31,10 +25,8 @@ function Cell(props) {
     })
     return (
         <>
-            {col}
+            {loop}
         </>
 
     )
 }
-
-export default App;
