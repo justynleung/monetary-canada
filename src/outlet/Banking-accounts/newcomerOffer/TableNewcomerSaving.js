@@ -1,8 +1,7 @@
 // Asset 
 import data from "../../../asset/data/newcomerSaving.json"
 
-// React table
-import ReactTable from 'react-table-v6';
+// Style
 import '../../../css/banking-accounts.css'
 
 
@@ -10,11 +9,10 @@ function App() {
     const rowHeader = Object.keys(data[0]).splice(1, 6)
     const row = rowHeader.map((item, index) => {
         return (
-            <tr>
-                <td>{item}</td>
+            <tr key={data[index]["id"]}>
+                <td >{item}</td>
                 <Cell item={item} />
             </tr>
-
         )
     })
 
@@ -28,9 +26,7 @@ function Cell(props) {
     const col = data.map((item, index) => {
 
         return (
-            <>
-                <td>{data[index][props.item.toString()]}</td>
-            </>
+            <td key={index}>{data[index][props.item.toString()]}</td>
         )
     })
     return (

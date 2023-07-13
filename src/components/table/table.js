@@ -1,11 +1,11 @@
-export function Table([]) {
+export function Table() {
+
     const row = rowHeader.map((item) => {
         return (
             <tr>
                 <td>{item}</td>
                 <Cell item={item} />
             </tr>
-
         )
     })
 
@@ -27,6 +27,5 @@ function Cell(props) {
         <>
             {loop}
         </>
-
     )
 }

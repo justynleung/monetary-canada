@@ -9,11 +9,15 @@ export default function BankingAccounts() {
             <div className="text-box-left">
                 <h3>Chequing Accounts</h3>
             </div>
-            <Chequing />
+            <table>
+                <Chequing />
+            </table>
             <div className="text-box-left">
                 <h3>Saving Accounts</h3>
             </div>
-            <Saving />
+            <table>
+                <Saving />
+            </table>
             <div className="text-box-left">
                 <small className="tc-text">*Base interest rate and promotional interest rate are subjected to change by the instituitions. Cash bonus detail can be found on respective official websites. Please refer to official website for most accurate information. Information is up to date as of 5/6/2023.</small>
             </div>
