@@ -10,31 +10,31 @@ export default function Footer() {
     return (
         <footer>
             <div className="footer-wrapper_main">
-                <div className="footer-wrapper flex_row">
-                    <div className="footer-wrapper flex_col">
+                <div className="footer-wrapper --flex_row">
+                    <div className="footer-wrapper --flex_col">
                         <h3 className="footer_header">About</h3>
                         <a href="#!" className="footer_link">
                             About Us
                         </a>
                     </div>
-                    <div className="footer-wrapper flex_col">
+                    <div className="footer-wrapper --flex_col">
                         <h3 className="footer_header">Guide</h3>
                         <a href="blog.html" className="footer_link">
                             Blog
                         </a>
                     </div>
-                    <div className="footer-wrapper flex_col">
+                    <div className="footer-wrapper --flex_col">
                         <h3 className="footer_header">Disclosure</h3>
                         <a href="affiliate-disclosure.html" className="footer_link">
                             Affiliate Disclosure
                         </a>
                     </div>
-                    <div className="footer-wrapper flex_col">
+                    <div className="footer-wrapper --flex_col">
                         <h3 className="footer_header">Stay updated</h3>
                         <div className="signup"></div>
                     </div>
                 </div>
-                <div className="footer-wrapper flex_col">
+                <div className="footer-wrapper --flex_col">
                     {/* <div className="logo-wrapper">
                             <img src={logo} alt="Monetary Canada Logo" className="logo"/>
                         </div> */}

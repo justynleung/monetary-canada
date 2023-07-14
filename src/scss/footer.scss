@@ -11,7 +11,7 @@
     height: auto;
   }
 
-  &.flex_col {
+  &.--flex_col {
     text-align: left;
     margin-top: 2em;
     line-height: 1.8;
@@ -30,7 +30,7 @@
     }
   }
 
-  &.flex_row {
+  &.--flex_row {
     justify-content: space-around;
   }
 

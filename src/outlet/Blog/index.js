@@ -29,11 +29,11 @@ export default function App() {
             <LoadingPage className={state === "unmounted" ? "" : state === "mounting" ? "hiding" : "hide"} />
             <div className="blog-wrapper">
                 <div className='banner'><h2>Blog</h2></div>
-                <div className='wrapper-width-60 flex_row'>
-                    <div className='flex_col'>
+                <div className='--wrapper-width-60 --flex_row'>
+                    <div className='--flex_col'>
                         <BlogPost />
                     </div>
-                    {/* <div className='flex_col'>
+                    {/* <div className='--flex_col'>
                     <BlogNav />
                 </div> */}
                 </div>

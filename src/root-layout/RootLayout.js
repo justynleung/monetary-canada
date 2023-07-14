@@ -18,7 +18,7 @@ function App() {
   return (
     <div className='body'>
       <Navbar />
-      <div className="flex-container">
+      <div className="--flex-container">
         <main>
           <section>
             <div className={`main-wrapper ${isMobile ? "mobile" : ""}`}>

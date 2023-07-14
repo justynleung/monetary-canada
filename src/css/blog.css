@@ -29,7 +29,7 @@ body {
 body {
   background: #fff;
   color: #231f20;
-  height: 100vh;
+  height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
   min-height: 100%;
@@ -57,11 +57,18 @@ main {
   width: 100%;
 }
 
-.flex-container {
+.--flex-container {
   display: flex;
   flex-direction: column;
   /* fallback height */
   min-height: 100%;
+}
+
+.--wrapper-width-60 {
+  min-height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -70,12 +77,12 @@ footer {
   color: #231f20;
 }
 
-.flex_row {
+.--flex_row {
   display: flex;
   flex-direction: row;
 }
 
-.flex_col {
+.--flex_col {
   display: flex;
   flex-direction: column;
 }
@@ -103,15 +110,15 @@ footer {
 .blog-wrapper .banner h2 {
   font-size: 50rem;
 }
-.blog-wrapper .wrapper-width-60 {
+.blog-wrapper .--wrapper-width-60 {
   height: auto;
   width: 40%;
   border: 1px solid #dddddd;
   align-items: center;
 }
-.blog-wrapper .wrapper-width-60 h3,
-.blog-wrapper .wrapper-width-60 p,
-.blog-wrapper .wrapper-width-60 small {
+.blog-wrapper .--wrapper-width-60 h3,
+.blog-wrapper .--wrapper-width-60 p,
+.blog-wrapper .--wrapper-width-60 small {
   padding: 0.5em;
 }
 .blog-wrapper .blog-post {
