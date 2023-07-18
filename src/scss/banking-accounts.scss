@@ -26,6 +26,9 @@
         scrollbar-width: none;
         /* Firefox */
 
+        .text-wrapper {
+            margin: 1em 0px;
+        }
     }
 
     table {
@@ -33,17 +36,48 @@
         overflow: auto;
         height: 100%;
 
+        margin: 2em 0;
+
 
         tbody {
+
+            @for $i from 1 through 6 {
+                &:nth-child(1) tr:nth-child(#{$i}) td:nth-child(1) {
+                    padding-right: 1em;
+                }
+            }
+
             &:nth-child(1) tr:nth-child(1) td:nth-child(1) {
                 color: transparent;
             }
 
             tr {
+
                 td {
                     padding: 0.5em;
+                    border: 2px solid $light-green;
+
+                    background-color: $light-green;
+
+                    border-radius: 5px;
+                    margin: 0.2em;
+                    width: 14em;
+
+
                 }
             }
+
+            &:nth-child(1) tr:nth-child(1) td:nth-child(1) {
+                border: none;
+                background-color: transparent;
+            }
+
+            &:nth-child(1) tr td:nth-child(1) {
+                border: none;
+                background-color: $light-gray;
+
+            }
+
         }
     }
 
