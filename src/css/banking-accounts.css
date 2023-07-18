@@ -30,7 +30,7 @@ body {
   background: #fff;
   color: #231f20;
   height: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 1;
   min-height: 100%;
 }
@@ -112,50 +112,65 @@ footer {
 .banking-accounts-wrapper .--wrapper-width-60 .text-wrapper {
   margin: 1em 0px;
 }
+.banking-accounts-wrapper .--wrapper-width-60 .text-wrapper h3::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(0.25turn, #5c9484, #b8d0cc);
+  border-radius: 3px;
+  margin-top: 10px;
+}
 .banking-accounts-wrapper table {
   min-width: 1200rem;
   overflow: auto;
-  height: 100%;
-  margin: 2em 0;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) {
-  padding-right: 1em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) {
-  padding-right: 1em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(3) td:nth-child(1) {
-  padding-right: 1em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(4) td:nth-child(1) {
-  padding-right: 1em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(5) td:nth-child(1) {
-  padding-right: 1em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(6) td:nth-child(1) {
-  padding-right: 1em;
+  height: auto;
+  font-size: 16rem;
+  margin-bottom: 2em;
 }
 .banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) {
   color: transparent;
 }
+.banking-accounts-wrapper table tbody tr {
+  height: 3em;
+}
 .banking-accounts-wrapper table tbody tr td {
-  padding: 0.5em;
-  border: 2px solid #b8d0cc;
+  padding: 0.8em;
   background-color: #b8d0cc;
   border-radius: 5px;
-  margin: 0.2em;
-  width: 14em;
-}
-.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) {
-  border: none;
-  background-color: transparent;
+  width: 224px;
+  height: 62px;
 }
 .banking-accounts-wrapper table tbody:nth-child(1) tr td:nth-child(1) {
-  border: none;
+  border-radius: 0px;
   background-color: #dddddd;
+  position: relative;
 }
-.banking-accounts-wrapper table tbody tr:nth-child(1) {
-  border: none;
-  font-weight: bold;
+.banking-accounts-wrapper table tbody:nth-child(1) tr td:nth-child(1) div::before {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 32px solid white;
+  border-left: 30px solid transparent;
+}
+.banking-accounts-wrapper table tbody:nth-child(1) tr td:nth-child(1) div::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-bottom: 32px solid white;
+  border-left: 30px solid transparent;
+}
+.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) {
+  background-color: transparent;
+}
+.banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td {
+  background-color: #5c9484;
 }/*# sourceMappingURL=banking-accounts.css.map */

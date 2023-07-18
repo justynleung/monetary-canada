@@ -30,7 +30,7 @@ body {
   background: #fff;
   color: #231f20;
   height: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 1;
   min-height: 100%;
 }
@@ -119,17 +119,13 @@ footer {
 .blog-wrapper .--wrapper-width-60 h3,
 .blog-wrapper .--wrapper-width-60 p,
 .blog-wrapper .--wrapper-width-60 small {
-  padding: 0.5em;
+  padding: 8px;
 }
 .blog-wrapper .blog-post {
   width: 40vw;
-  -webkit-transition: all 450ms ease-in-out;
-  -moz-transition: all 450ms ease-in-out;
-  -ms-transition: all 450ms ease-in-out;
-  -o-transition: all 450ms ease-in-out;
 }
 .blog-wrapper .blog-post .lazy-load-image-loaded img {
-  width: 39.9vw;
+  width: 39.88vw;
 }
 .blog-wrapper .blog-nav {
   width: 20vw;

@@ -39,22 +39,18 @@
         h3,
         p,
         small {
-            padding: 0.5em;
+            padding: 8px;
         }
     }
 
     .blog-post {
         width: 40vw;
 
-
-        @include transition-ease;
-
         .lazy-load-image-loaded {
             img {
-                width: 39.9vw;
+                width: 39.88vw;
             }
         }
-
     }
 
     .blog-nav {

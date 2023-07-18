@@ -1,8 +1,11 @@
 // Asset 
 import data from '../../../asset/data/newcomerChequing.json';
 
+// Component
 import Table from '../../../components/table/table';
 
+// Style
+import '../../../css/banking-accounts.css';
 
 function App() {
     const rowHeader = Object.keys(data[0]).splice(1, 6)

@@ -28,24 +28,33 @@
 
         .text-wrapper {
             margin: 1em 0px;
+
+            h3 {
+                &::after {
+                    display: block;
+                    content: '';
+                    height: 3rem;
+                    width: 100%;
+                    background: linear-gradient(.25turn, $green, $light-green);
+
+                    border-radius: 3px;
+
+                    margin-top: 10rem;
+                }
+            }
         }
     }
 
     table {
         min-width: 1200rem;
         overflow: auto;
-        height: 100%;
+        height: auto;
 
-        margin: 2em 0;
+        font-size: 16rem;
 
+        margin-bottom: 2em;
 
         tbody {
-
-            @for $i from 1 through 6 {
-                &:nth-child(1) tr:nth-child(#{$i}) td:nth-child(1) {
-                    padding-right: 1em;
-                }
-            }
 
             &:nth-child(1) tr:nth-child(1) td:nth-child(1) {
                 color: transparent;
@@ -53,36 +62,61 @@
 
             tr {
 
+                height: 48rem;
+
                 td {
-                    padding: 0.5em;
-                    border: 2px solid $light-green;
+                    padding: 0.8em;
 
                     background-color: $light-green;
 
                     border-radius: 5px;
-                    margin: 0.2em;
-                    width: 14em;
-
+                    width: 224rem;
+                    height: 62rem;
 
                 }
             }
 
+            &:nth-child(1) tr td:nth-child(1) {
+                border-radius: 0px;
+                background-color: $light-gray;
+                position: relative;
+
+                div {
+                    &::before {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        right: -1rem;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 32rem solid white;
+                        border-left: 30rem solid transparent;
+                    }
+
+                    &::after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        right: -1rem;
+                        bottom: 0;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 32rem solid white;
+                        border-left: 30rem solid transparent;
+                    }
+                }
+            }
+
             &:nth-child(1) tr:nth-child(1) td:nth-child(1) {
-                border: none;
                 background-color: transparent;
             }
 
-            &:nth-child(1) tr td:nth-child(1) {
-                border: none;
-                background-color: $light-gray;
 
+            &:nth-child(1) tr:nth-child(1) td {
+                background-color: $green;
             }
 
         }
-    }
-
-    table tbody tr:nth-child(1) {
-        border: none;
-        font-weight: bold;
     }
 }

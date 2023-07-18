@@ -8,13 +8,13 @@ export default function BankingAccounts() {
                     <h2>Newcomer's offer</h2>
                 </div>
                 <div className="text-wrapper">
-                    <h3>Chequing Accounts</h3>
+                    <h3>Chequing Accounts<small>*</small></h3>
                 </div>
                 <table>
                     <Chequing />
                 </table>
                 <div className="text-wrapper">
-                    <h3>Saving Accounts</h3>
+                    <h3>Saving Accounts<small>*</small></h3>
                 </div>
                 <table>
                     <Saving />

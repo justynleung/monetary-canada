@@ -19,7 +19,7 @@ export default function NavLinks() {
                     Banking Accounts
                 </NavLink>
             </li>
-            <li className="menu-nav_item">
+            {/* <li className="menu-nav_item">
                 <NavLink to="NA" className="menu-nav_link">
                     NA
                 </NavLink>
@@ -28,7 +28,7 @@ export default function NavLinks() {
                 <NavLink to="loading" className="menu-nav_link">
                     NA
                 </NavLink>
-            </li>
+            </li> */}
             <li className="menu-nav_item">
                 <NavLink to="blog" className="menu-nav_link">
                     Blog

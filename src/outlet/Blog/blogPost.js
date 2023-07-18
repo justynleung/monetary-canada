@@ -31,9 +31,11 @@ function BlogPost(props) {
                 alt="photo"
                 placeholderSrc={placeholderImg}
             />
-            <h3>{title}</h3>
-            <small>{timestamp}</small>
-            <p className="expandable">{content}</p>
+            <div className='text-wrapper'>
+                <h3>{title}</h3>
+                <small>{timestamp}</small>
+                <p className="expandable">{content}</p>
+            </div>
         </div>
     )
 }
