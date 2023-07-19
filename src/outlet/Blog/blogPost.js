@@ -26,7 +26,7 @@ function BlogPost(props) {
     const { title, img, content, timestamp } = props;
     return (
         <div className="blog-post flex_col">
-            <LazyLoadImage
+            <img
                 src={img}
                 alt="photo"
                 placeholderSrc={placeholderImg}

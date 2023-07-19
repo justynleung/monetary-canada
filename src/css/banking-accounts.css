@@ -115,11 +115,11 @@ footer {
 .banking-accounts-wrapper .--wrapper-width-60 .text-wrapper h3::after {
   display: block;
   content: "";
-  height: 3px;
+  height: 3rem;
   width: 100%;
   background: linear-gradient(0.25turn, #5c9484, #b8d0cc);
   border-radius: 3px;
-  margin-top: 10px;
+  margin-top: 10rem;
 }
 .banking-accounts-wrapper table {
   min-width: 1200rem;
@@ -132,14 +132,14 @@ footer {
   color: transparent;
 }
 .banking-accounts-wrapper table tbody tr {
-  height: 3em;
+  height: 48rem;
 }
 .banking-accounts-wrapper table tbody tr td {
   padding: 0.8em;
   background-color: #b8d0cc;
   border-radius: 5px;
-  width: 224px;
-  height: 62px;
+  width: 224rem;
+  height: 62rem;
 }
 .banking-accounts-wrapper table tbody:nth-child(1) tr td:nth-child(1) {
   border-radius: 0px;
@@ -150,23 +150,23 @@ footer {
   display: block;
   content: "";
   position: absolute;
-  right: -1px;
-  top: 0px;
+  right: -1rem;
+  top: 0;
   width: 0;
   height: 0;
-  border-top: 32px solid white;
-  border-left: 30px solid transparent;
+  border-top: 32rem solid white;
+  border-left: 30rem solid transparent;
 }
 .banking-accounts-wrapper table tbody:nth-child(1) tr td:nth-child(1) div::after {
   display: block;
   content: "";
   position: absolute;
-  right: -1px;
-  bottom: 0px;
+  right: -1rem;
+  bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 32px solid white;
-  border-left: 30px solid transparent;
+  border-bottom: 32rem solid white;
+  border-left: 30rem solid transparent;
 }
 .banking-accounts-wrapper table tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) {
   background-color: transparent;

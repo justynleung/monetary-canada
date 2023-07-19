@@ -124,7 +124,7 @@ footer {
 .blog-wrapper .blog-post {
   width: 40vw;
 }
-.blog-wrapper .blog-post .lazy-load-image-loaded img {
+.blog-wrapper .blog-post img {
   width: 39.88vw;
 }
 .blog-wrapper .blog-nav {
