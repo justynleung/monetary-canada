@@ -1,13 +1,28 @@
-<h1>Websites for displaying information for choosing financial products</h1>
+<h1>Website for displaying information for choosing financial products</h1>
 
-<li>Constructed with html, SCSS and React on VS code</li>
-<li>Loading page with React lifecycle method for UX enhancement</li>
-<li>Featured SVG path animation loading page with framer-motion library</li>
-<li>Animated mobile navigation with custom hook which delay the mounting and un-mounting of the component</li>
-<li>Routing to different pages with react-router-dom library</li>
-<li>Mapping through local data in JSX</li>
-<li>State management and use props in child components</li>
-<li>Mobile responsive with react-responsive library</li>
+<h2>Tech stacks</h2>
+<ul>
+   <li>ReactJS</li>
+   <li>SCSS & CSS</li>
+   <li>Typescript</li>
+</ul>
+<h2>Libraries</h2>
+<ul>
+   <li>framer-motion</li>
+   <li>react-responsive</li>
+   <li>react-router-dom</li>
+</ul>
+
+<h2>Functionalities</h2>
+<p>The website is for displaying financial information in a pleasurable manner. A unique design language is used throughout the website. Lazy loading for the blog posts is enabled with a custom loading page component.</p>
+
+<h2>Technologies used</h2>
+<p>Routing of different pages is achieved by react-router-dom library. Framer-motion library converted the custom logo into loading animatino which enhance UX, it also serve as lazy-loading for blog posts which contain lots of data. Images are optimized for better site performance.</p>
+
+
+
+
+
 
 
 
